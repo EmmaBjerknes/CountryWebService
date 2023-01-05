@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="stylesheetMon41.css">
+  <title>Country Web</title>
+</head>
+
+
+<body>
+  <header>
+    <h1>CWS</h1>
+    <p>Country Web Service</p>
+  </header>
+  <section id="outer-container">
+    <section id="info">
+      <h2>Information</h2>
+      <ul id="countryInfo">
+        <li>List item: 1</li>
+        <li>List item: 2</li>
+        <li>List item: 3</li>
+        <li>List item: 4</li>
+        <li>List item: 5</li>
+        <li>Flag: <img alt="flag"></li>
+      </ul>
+      <button id="prev">Prev</button>
+      <button id="next">Next</button>
+      <!-- 
+      WORKS - but not good or the way I want yet
+      <p>Edit content</p>
+          <button type="submit" id="editButton">Edit</button>
+          <button type="submit" id="endButton">Done</button>-->
+    </section>   
+  
+    <section id="country-form">
+      <form id="form-id">
+        <h2>Add a country: </h2>
+        <p><label for="fname">Name:</label>
+          <input type="text" id="newName" name="fname" required>
+        </p>
+        
+        <p><label for="capital">Capital:</label>
+          <input type="text" id="newCapital" name="capital" required>
+        </p>
+        
+        <p><label for="population">Population:</label>
+          <input type="text" id="newPopulation" name="population" required>
+        </p>
+        
+        <p><label for="language">Language:</label>
+          <input type="text" id="newLanguage" name="language" required>
+        </p>
+  
+        <p><label for="democracy">Democracy: (check for yes)</label>
+          <input type="checkbox" id="newDemocracy" name="democracy">
+        </p>
+  
+        <p><label for="flag">Flag:</label> 
+          <input type="text" id="newFlag" name="flag">
+        </p>
+  
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  
+    <section id="view-allCountry">
+      <div>
+        <h2>List all countries</h2>
+        <ul id="allcountries">
+        </ul>
+      </div>
+    </section>
+  </section>
+  
+
+  <script src="scriptMon41.js"></script>
+</body>
+
+</html>
